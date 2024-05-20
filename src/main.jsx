@@ -11,7 +11,7 @@ import '@fontsource/roboto/700.css';
 import Root from './routes/root.jsx';
 import ErrorPage from './views/ErrorPage/ErrorPage.jsx';
 import Home from './views/Home/Home.jsx';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Resume from './views/Resume/Resume.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
@@ -21,7 +21,7 @@ const darkTheme = createTheme({
     mode: 'dark',
   },
 });
-
+const theme = responsiveFontSizes(darkTheme)
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme}>
       <CssBaseline />
       <RouterProvider router={router} />
     </ThemeProvider>
