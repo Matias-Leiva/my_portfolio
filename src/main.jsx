@@ -11,9 +11,10 @@ import '@fontsource/roboto/700.css';
 import Root from './routes/root.jsx';
 import ErrorPage from './views/ErrorPage/ErrorPage.jsx';
 import Home from './views/Home/Home.jsx';
-import Skills from './views/Skills/Skills.jsx';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Resume from './views/Resume/Resume.jsx';
+import ContactMe from './views/ContactMe/ContactMe.jsx';
 
 const darkTheme = createTheme({
   palette: {
@@ -31,10 +32,14 @@ const router = createBrowserRouter([
         path: "",
         element: <Home />,
       },
-      // {
-      //   path: "skills",
-      //   element: <Skills />,
-      // },
+      {
+        path: "resume",
+        element: <Resume />,
+      },
+      {
+        path: "contact-me",
+        element: <ContactMe />,
+      },
     ]
   },
 ]);

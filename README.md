@@ -14,7 +14,9 @@ Welcome to the My_Portfolio repository! This project is a personal portfolio web
 
 # Table of Contents
 
-## Home Section: A welcoming introduction.
+* Home Section: A welcoming introduction.
+* Resume: My lasts experiencies.
+* Contact Me: My social media. 
 
 # Technologies Used
 
@@ -54,7 +56,7 @@ npm install
 
 1. Run the development server:
 ```sh
-npm start
+npm run dev
 ```
 
 2. Open your browser and visit http://localhost:3000 to view the website.
