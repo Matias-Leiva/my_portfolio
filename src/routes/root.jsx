@@ -7,8 +7,8 @@ export default function Root() {
     return (
         <div className="layout">
             <Header className="header"></Header>
-            <main><Outlet /></main>
-            <footer>@2024 leivamatias.com</footer>
+            <Outlet className="main" />
+            <footer className="footer">@2024 leivamatias.com</footer>
         </div>
     );
 }

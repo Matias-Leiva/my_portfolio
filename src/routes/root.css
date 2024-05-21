@@ -1,5 +1,5 @@
 .layout {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background: #0f0c29;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-footer {
+.footer {
   height: 30px;
   padding: 10px 30px;
   display: flex;
@@ -26,6 +26,6 @@ footer {
   width: 100%;
 }
 
-main {
+.main {
   flex: 1;
 }
