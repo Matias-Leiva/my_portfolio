@@ -37,37 +37,3 @@ function Resume() {
 }
 
 export default Resume
-
-{/* <Grid container spacing={{ xs: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} alignItems='center' justifyContent='center'>
-            <Grid item xs={4} sm={8} md={12}>
-                <Button
-                    variant="primary"
-                    href={pdf}
-                    target="_blank"
-                    style={{ maxWidth: "250px" }}
-                >
-                    &nbsp;Download CV
-                </Button>
-            </Grid>
-
-            <Grid item xs={4} sm={8} md={11} style={{
-                paddingTop: '50px',
-                paddingBottom: '50px',
-                justifyContent: 'center'
-            }}>
-                <Document file={pdf} style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Page pageNumber={1} />
-                </Document>
-            </Grid>
-
-            <Grid item xs={4} sm={8} md={12}>
-                <Button
-                    variant="primary"
-                    href={pdf}
-                    target="_blank"
-                    style={{ maxWidth: "250px" }}
-                >
-                    &nbsp;Download CV
-                </Button>
-            </Grid>
-        </Grid> */}
