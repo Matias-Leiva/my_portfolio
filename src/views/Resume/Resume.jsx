@@ -14,27 +14,23 @@ function Resume() {
     }, []);
 
     return (
-        <Grid container spacing={{ xs: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} alignItems='center' justifyContent='center' flexDirection={'column'} marginBottom={10}>
-            <Grid item xs={4} sm={8} md={12}>
+        <Grid
+            container
+            direction='column'
+            alignItems='center'
+            justifyContent='space-between'
+            spacing={4}
+        >
+            <Grid item>
                 <Button variant="outlined" startIcon={<DownloadIcon />} href={pdf}>
                     Download CV
                 </Button>
             </Grid>
 
-            <Grid item xs={4} sm={8} md={11} style={{
-                paddingTop: '50px',
-                paddingBottom: '50px',
-                justifyContent: 'center'
-            }}>
+            <Grid item marginBottom={2}>
                 <Document file={pdf} style={{ display: 'flex', justifyContent: 'center' }}>
-                    <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} renderTextLayer={false} />
+                    <Page pageNumber={1} scale={width > 820 ? 1.3 : width > 400 ? 0.6 : 0.4} renderTextLayer={false} />
                 </Document>
-            </Grid>
-
-            <Grid item xs={4} sm={8} md={12}>
-                <Button variant="outlined" startIcon={<DownloadIcon />} href={pdf}>
-                    Download CV
-                </Button>
             </Grid>
         </Grid>
     )

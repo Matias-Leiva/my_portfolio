@@ -7,9 +7,8 @@ function Home() {
     return (
         <Grid
             container
-            spacing={{ xs: 2 }}
             columns={{ xs: 4, sm: 8, md: 12 }}
-            height={'95vh'}
+            style={{ height: '88vh' }}
         >
             <Grid item xs={2} sm={4} md={6}>
                 <Fade in={true} timeout={1000}>
