@@ -15,6 +15,7 @@ import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/s
 import CssBaseline from '@mui/material/CssBaseline';
 import Resume from './views/Resume/Resume.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
+import "./assets/font-awesome/css/all.css";
 
 const darkTheme = createTheme({
   palette: {
