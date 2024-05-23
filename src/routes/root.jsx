@@ -2,15 +2,16 @@ import { Button, ButtonGroup, Container } from "@mui/material";
 import "./root.css"
 import { Link, Outlet } from "react-router-dom";
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 
 export default function Root() {
     return (
         <div className="layout">
-            <Header className="header"></Header>
+            <Header className="header" />
             <Container maxWidth="md" className="main">
                 <Outlet />
             </Container>
-            <footer className="footer">@2024 leivamatias.com</footer>
+            <Footer className="footer" />
         </div>
     );
 }
