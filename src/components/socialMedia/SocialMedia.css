@@ -2,10 +2,6 @@
   color: white;
 }
 
-.icon-button {
-  margin-bottom: 10px;
-}
-
 .icon-button i {
   border-radius: 2.6rem;
   cursor: pointer;
@@ -21,7 +17,6 @@
   -ms-user-select: none;
   user-select: none;
   width: 2.6rem;
-  margin-bottom: 10px;
 }
 
 /* Media Query */

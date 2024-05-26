@@ -1,14 +1,17 @@
-import { Box, Button, Container, Fade, Grid, Typography } from '@mui/material'
+import { Box, Button, Container, Fade, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 import SocialMedia from '../../components/socialMedia/SocialMedia';
 import { Link } from 'react-router-dom';
 
 function ContactMe() {
+    const md = useMediaQuery('(min-width:900px)');
     return (
         <Grid
             container
             columns={{ xs: 4, sm: 8, md: 12 }}
-            style={{ height: '88vh' }}
+            alignItems='center'
+            justifyContent={'center'}
+            rowGap={5}
         >
             <Grid item xs={4} sm={4} md={6}>
                 <Fade in={true} timeout={2000}>
@@ -16,11 +19,10 @@ function ContactMe() {
                         display="flex"
                         alignItems="center"
                         justifyContent='center'
-                        flexDirection='column'
                         height='100%'
                         width='100%'
                     >
-                        <img style={{ height: '50%', borderRadius: '50%' }} alt="" src="https://avatars.githubusercontent.com/u/85767333?v=4" /></Box>
+                        <img style={{ width: '70%', borderRadius: '100%', alignSelf: 'center' }} alt="" src="https://avatars.githubusercontent.com/u/85767333?v=4" /></Box>
                 </Fade>
             </Grid>
             <Grid item xs={4} sm={4} md={6}>
@@ -32,24 +34,26 @@ function ContactMe() {
                         justifyContent='center'
                         width='100%'
                         height='100%'
+                        rowGap={3}
                     >
-                        <Grid alignSelf='center'>
-                            <Typography
-                                className="contact-heading-text"
-                                variant='h5'
-                                fontWeight='bold'
+                        <Box width={'90%'}>
+                            <Grid alignSelf='flex-start'>
+                                <Typography
+                                    className="contact-heading-text"
+                                    variant={md ? 'h4' : 'h5'}
+                                    fontWeight='bold'
+                                >
+                                    Feel free to connect with me
+                                </Typography>
+                            </Grid>
+                            <Grid alignSelf='center'><Typography
+                                className="contact-header-detail-text subTitle"
+                                variant={md ? 'h6' : 'h7'}
+                                textAlign={'justify'}
                             >
-                                Feel free to connect with me
+                                You can reach out to me on social media. I can assist you with Next.js, React, React Native, Android, iOS, Django, and more...
                             </Typography>
-                        </Grid>
-                        <Grid alignSelf='flex-start'><Typography
-                            className="contact-header-detail-text subTitle"
-                            variant='p'
-                            align='center'
-                        >
-                            You can reach out to me on social media. I can assist you with Next.js, React, React Native, Android, iOS, Django, and more...
-                        </Typography>
-                        </Grid>
+                            </Grid></Box>
                         <Grid>
                             <SocialMedia align="center" justifyContent={'center'} />
                         </Grid>
