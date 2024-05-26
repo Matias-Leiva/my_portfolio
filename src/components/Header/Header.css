@@ -1,5 +1,5 @@
 .header-main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     margin: 10px 20px;
 }

@@ -33,7 +33,7 @@ function ContactMe() {
                         width='100%'
                         height='100%'
                     >
-                        <Grid alignSelf='flex-start'>
+                        <Grid alignSelf='center'>
                             <Typography
                                 className="contact-heading-text"
                                 variant='h5'
@@ -42,7 +42,7 @@ function ContactMe() {
                                 Feel free to connect with me
                             </Typography>
                         </Grid>
-                        <Grid><Typography
+                        <Grid alignSelf='flex-start'><Typography
                             className="contact-header-detail-text subTitle"
                             variant='p'
                             align='center'
