@@ -8,7 +8,7 @@ export default function Root() {
     return (
         <div className="layout">
             <Header className="header" />
-            <Container maxWidth="md" className="main">
+            <Container maxWidth="xl" className="main">
                 <Outlet />
             </Container>
             <Footer className="footer" />

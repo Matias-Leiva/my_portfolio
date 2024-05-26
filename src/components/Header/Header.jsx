@@ -6,11 +6,15 @@ import './Header.css';
 function Header() {
     return (
         <Box className='header-main'>
-            <ButtonGroup variant="text" aria-label="Basic button group">
+            <Box>
+                <Link to={""}><Button>leivamatias.com</Button></Link>
+            </Box>
+            <Box>
                 <Link to={""}><Button>Home</Button></Link>
                 <Link to={"resume"}><Button>Resume</Button></Link>
                 <Link to={"contact-me"}><Button>Contact Me</Button></Link>
-            </ButtonGroup>
+            </Box>
+
         </Box>
     )
 }
