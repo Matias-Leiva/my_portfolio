@@ -21,7 +21,7 @@ function Footer() {
                     developed with ❤️ by Matias Leiva
                 </Grid>
             }
-            <Grid item alignSelf={'center'}>
+            <Grid item alignSelf={'center'} marginBottom={md ? 0 : 1}>
                 copyright ©️ {year} leivamatias.com
             </Grid>
 

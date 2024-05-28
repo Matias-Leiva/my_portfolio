@@ -16,6 +16,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Resume from './views/Resume/Resume.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
 import "./assets/font-awesome/css/all.css";
+import NoMatch from './views/NoMatch/NoMatch.jsx';
 
 const darkTheme = createTheme({
   palette: {
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
       },
     ]
   },
+  {
+    path: '*',
+    element: <NoMatch />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

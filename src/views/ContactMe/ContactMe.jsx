@@ -1,4 +1,4 @@
-import { Box, Button, Container, Fade, Grid, Typography, useMediaQuery } from '@mui/material'
+import { Box, Button, Fade, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 import SocialMedia from '../../components/socialMedia/SocialMedia';
 import { Link } from 'react-router-dom';
@@ -13,7 +13,7 @@ function ContactMe() {
             justifyContent={'center'}
             rowGap={5}
         >
-            <Grid item xs={4} sm={4} md={6}>
+            <Grid item xs={4} sm={8} md={6}>
                 <Fade in={true} timeout={2000}>
                     <Box
                         display="flex"
@@ -22,10 +22,10 @@ function ContactMe() {
                         height='100%'
                         width='100%'
                     >
-                        <img style={{ width: '70%', borderRadius: '100%', alignSelf: 'center' }} alt="" src="https://avatars.githubusercontent.com/u/85767333?v=4" /></Box>
+                        <img style={{ width: md ? '55%' : '40%', borderRadius: '100%', alignSelf: 'center' }} alt="" src="https://avatars.githubusercontent.com/u/85767333?v=4" /></Box>
                 </Fade>
             </Grid>
-            <Grid item xs={4} sm={4} md={6}>
+            <Grid item xs={4} sm={8} md={6}>
                 <Fade in={true} timeout={1000}>
                     <Grid
                         container
@@ -40,7 +40,7 @@ function ContactMe() {
                             <Grid alignSelf='flex-start'>
                                 <Typography
                                     className="contact-heading-text"
-                                    variant={md ? 'h4' : 'h5'}
+                                    variant={'h5'}
                                     fontWeight='bold'
                                 >
                                     Feel free to connect with me
@@ -48,7 +48,7 @@ function ContactMe() {
                             </Grid>
                             <Grid alignSelf='center'><Typography
                                 className="contact-header-detail-text subTitle"
-                                variant={md ? 'h6' : 'h7'}
+                                variant={'h7'}
                                 textAlign={'justify'}
                             >
                                 You can reach out to me on social media. I can assist you with Next.js, React, React Native, Android, iOS, Django, and more...
