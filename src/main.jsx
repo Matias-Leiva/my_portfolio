@@ -17,6 +17,7 @@ import Resume from './views/Resume/Resume.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
 import "./assets/font-awesome/css/all.css";
 import NoMatch from './views/NoMatch/NoMatch.jsx';
+import Portfolio from './views/Portfolio/Portfolio.jsx';
 
 const darkTheme = createTheme({
   palette: {
@@ -42,11 +43,15 @@ const router = createBrowserRouter([
         path: "contact-me",
         element: <ContactMe />,
       },
+      {
+        path: "portfolio",
+        element: <Portfolio />,
+      },
+      {
+        path: '*',
+        element: <NoMatch />
+      }
     ]
-  },
-  {
-    path: '*',
-    element: <NoMatch />
   }
 ]);
 

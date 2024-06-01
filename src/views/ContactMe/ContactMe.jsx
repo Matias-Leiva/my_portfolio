@@ -51,7 +51,7 @@ function ContactMe() {
                                 variant={'h7'}
                                 textAlign={'justify'}
                             >
-                                You can reach out to me on social media. I can assist you with Next.js, React, React Native, Android, iOS, Django, and more...
+                                You can reach out to me on social media. I can assist you with Next.js, React, React Native, Android, iOS, Django, Arduino, and more...
                             </Typography>
                             </Grid></Box>
                         <Grid>
