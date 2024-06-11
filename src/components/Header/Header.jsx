@@ -24,7 +24,7 @@ function Header() {
             {completeHeader ?
                 <Box alignItems='center' justifyContent='center'>
                     <Link to={""}><Button>Home</Button></Link>
-                    <Link to={"resume"}><Button>Resume</Button></Link>
+                    <Link to={"about-me"}><Button>About</Button></Link>
                     <Link to={"portfolio"}><Button>Portfolio</Button></Link>
                     <Link to={"contact-me"}><Button>Contact Me</Button></Link>
                 </Box>
@@ -56,7 +56,7 @@ function Header() {
                         }}
                     >
                         <MenuItem onClick={() => handleClose("")}>Home</MenuItem>
-                        <MenuItem onClick={() => handleClose("resume")}>Resume</MenuItem>
+                        <MenuItem onClick={() => handleClose("about-me")}>About</MenuItem>
                         <MenuItem onClick={() => handleClose("portfolio")}>Portfolio</MenuItem>
                         <MenuItem onClick={() => handleClose("contact-me")}>Contact Me</MenuItem>
                     </Menu>

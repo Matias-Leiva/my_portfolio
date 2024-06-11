@@ -13,11 +13,11 @@ import ErrorPage from './views/ErrorPage/ErrorPage.jsx';
 import Home from './views/Home/Home.jsx';
 import { ThemeProvider, createTheme, responsiveFontSizes } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Resume from './views/Resume/Resume.jsx';
 import ContactMe from './views/ContactMe/ContactMe.jsx';
 import "./assets/font-awesome/css/all.css";
 import NoMatch from './views/NoMatch/NoMatch.jsx';
 import Portfolio from './views/Portfolio/Portfolio.jsx';
+import AboutMe from './views/About/AboutMe.jsx';
 
 const darkTheme = createTheme({
   palette: {
@@ -36,8 +36,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "resume",
-        element: <Resume />,
+        path: "about-me",
+        element: <AboutMe />,
       },
       {
         path: "contact-me",
