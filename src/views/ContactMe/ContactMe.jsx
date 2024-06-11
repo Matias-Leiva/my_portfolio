@@ -12,6 +12,7 @@ function ContactMe() {
             alignItems='center'
             justifyContent={'center'}
             rowGap={5}
+            height='100%'
         >
             <Grid item xs={4} sm={8} md={6}>
                 <Fade in={true} timeout={2000}>

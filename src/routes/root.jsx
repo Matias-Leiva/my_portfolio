@@ -10,9 +10,18 @@ export default function Root() {
         <div className="layout">
             <Header className="header" />
             <Box component="main" sx={{ flexGrow: 1, display: 'flex' }}>
-                <Container sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} maxWidth="xl">
+                <Container sx={{
+                    flexGrow: 1,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'flex-start',
+                    alignItems: 'center'
+                }}
+                    maxWidth="xl"
+                >
                     <Outlet />
-                </Container></Box>
+                </Container>
+            </Box>
             <Footer className="footer" />
         </div>
     );

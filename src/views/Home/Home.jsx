@@ -12,6 +12,7 @@ function Home() {
             justifyContent='center'
             alignItems='center'
             rowSpacing={1}
+            height='100%'
         >
 
             <Grid item xs={4} sm={8} md={6}>

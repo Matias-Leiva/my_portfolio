@@ -14,7 +14,7 @@ function Portfolio() {
     }, [])
 
     return (
-        <Grid container gap={2} marginTop={5} xs={12} sm={12} md={10} alignItems='flex-start' justifyContent='center'>
+        <Grid container gap={2} marginTop={5} xs={12} sm={12} md={10} alignItems='center' justifyContent='center' height="100%">
             {
                 repos?.length > 0 && repos.map(project =>
                     <Grid item>
